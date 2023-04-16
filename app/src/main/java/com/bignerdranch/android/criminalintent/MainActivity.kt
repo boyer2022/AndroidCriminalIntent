@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         val currentFragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
 
         if (currentFragment == null) {
-            val fragment = CrimeFragment()
+            val fragment = CrimeListFragment.newInstance()  // Host an instance of CrimeListFragment
             // support is using the Jetpack library
                 // .add creates and commits a fragment transaction
             // .beginTransaction() means "Create a new fragment transaction, include one
