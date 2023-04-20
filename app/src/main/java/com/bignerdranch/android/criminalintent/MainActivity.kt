@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
                 // .add creates and commits a fragment transaction
             // .beginTransaction() means "Create a new fragment transaction, include one
             // add operation in it and then commit it."
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit()
+            supportFragmentManager.beginTransaction()
+                .add(R.id.fragment_container, fragment).commit()
         }
     }
 }
